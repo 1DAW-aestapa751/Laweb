@@ -1,0 +1,280 @@
+<HTML>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GUÍA HTML</title>
+        <link rel="stylesheet" href="Style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+        <hr>
+        <center>
+            <h1>
+                Guía Básica para HTML.
+            </h1>
+            <h3>Por Álvaro Estévez Aparicio</h3>
+        
+        <h4>Html es una herramienta muy útil en el desarrollo de aplicaciones web, esto debido<br> a que podremos crear nuestras propias páginas web de forma sencilla, para ello, en<br> esta guía se enseñarán las etiquetas más básicas para trabajar en HTML.</h4>
+        </center>
+        <br>
+        </header>
+        <div class="bloque">
+            <h1>Parte 1: Las etiquetas head y body.</h1>
+            <br>
+            <h4>Comenzando por lo básico, las primeras etiquetas que debemos tener en cuenta
+                las etiquetas &lt;html&gt; (que permite saber a nuestro sistema que tipo de lenguaje 
+                vamos a usar) y la etiqueta &lt;head&gt;, que nos va a permitir colocar el nombre que
+                aparecerá en la pestaña de la página.</h4>
+                
+                <h4>Dentro de &lt;head&gt; podemos añadir metadatos, los cuales aunque no aparecen directamente en la página pero indican datos como palabras clave, nombre del autor, charset para los carácteres que van a aparecer, el idioma... etc. Para esto usamos la etiqueta &lt;meta&gt; y dentro de esta el tipo de metadato.</h4>
+                <h4>Finalemente, el resto de contenido de la web se mete en la etiqueta &lt;body&gt;.</h4>
+                <br>
+        </div>
+        <br>
+        <div class="bloque">
+            <h1>Parte 2: Etiquetas básicas para texto.</h1>
+            <center>
+                <table>
+                    <strong>Etiquetas básicas de texto en HTML</strong>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Ejemplo</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>&lt;p&gt;Esto es un párrafo&lt;/p&gt;</td>
+                        <td>Define un párrafo de texto.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt; ... &lt;h6&gt;</td>
+                        <td>&lt;h1&gt;Título principal&lt;/h1&gt;</td>
+                        <td>Encabezados de diferentes niveles (de 1 a 6).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;b&gt;</td>
+                        <td>&lt;b&gt;Texto en negrita&lt;/b&gt;</td>
+                        <td>Resalta el texto en negrita (sin énfasis semántico).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>&lt;strong&gt;Importante&lt;/strong&gt;</td>
+                        <td>Texto importante o con énfasis fuerte.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;i&gt;</td>
+                        <td>&lt;i&gt;Texto en cursiva&lt;/i&gt;</td>
+                        <td>Texto en cursiva (sin énfasis semántico).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>&lt;em&gt;Énfasis&lt;/em&gt;</td>
+                        <td>Resalta con énfasis (semántico).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;u&gt;</td>
+                        <td>&lt;u&gt;Subrayado&lt;/u&gt;</td>
+                        <td>Subraya el texto.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>Texto&lt;br&gt;salto de línea</td>
+                        <td>Inserta un salto de línea.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;small&gt;</td>
+                        <td>&lt;small&gt;Texto pequeño&lt;/small&gt;</td>
+                        <td>Texto de menor tamaño.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;mark&gt;</td>
+                        <td>&lt;mark&gt;Texto resaltado&lt;/mark&gt;</td>
+                        <td>Resalta el texto como si estuviera marcado.</td>
+                    </tr>
+                </table>
+                <br>
+            </center>
+        </div>
+        <br>
+        <div class="bloque">
+            <h1>Parte 3: Tablas</h1>
+            <h4>Para hacer una tabla, usaremo las etiqueta &lt;table&gt;, que crea la tabla, y dentro pondremos las etiquetas &lt;tr&gt;, para cada fila de la tabla, y &lt;td&gt; para cada columna dentro de cada fila.</h4>
+            <br>
+        </div>
+        <br>
+        <div class="bloque">
+            <h1>Parte 4: Formularios</h1>
+            <h4>Para crear un formulario, usaremos la etiqueta &lt;form&gt;, dentro de la cual, para separar las secciones de nuestro formulario podemos poner las etiquetas &lt;fieldset&gt;, para separar entre secciones, y &lt;legend&gt;, para añadir un titulo a cada sección del formulario.</h4>
+            <br>
+            <center>
+                <table>
+                    <strong>Etiquetas del formulario</strong>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Ejemplo</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;label&gt;</td>
+                        <td>&lt;label for="name"&gt;PON TU NOMBRE&lt;/label&gt;</td>
+                        <td>Etiqueta descriptiva que indica la función de un campo de entrada. Se asocia a un input mediante el atributo for.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="text"&gt;</td>
+                        <td>&lt;input type="text" id="name"&gt;</td>
+                        <td>Crea un campo de texto para introducir datos cortos.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="checkbox"&gt;</td>
+                        <td>&lt;input type="checkbox" name="gender"&gt;</td>
+                        <td>Permite seleccionar una o varias opciones (casillas de opciones).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="radio"&gt;</td>
+                        <td>&lt;input type="radio" name="laos"&gt;</td>
+                        <td>Permite seleccionar solo una opción dentro de un grupo (botones de opción).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td>&lt;select id="place"&gt; ... &lt;/select&gt;</td>
+                        <td>Crea un menú desplegable con varias opciones.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;option&gt;</td>
+                        <td>&lt;option value="sevilla"&gt;Sevilla&lt;/option&gt;</td>
+                        <td>Define una opción dentro de un menú desplegable &lt;select&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="email"&gt;</td>
+                        <td>&lt;input type="email" id="mail"&gt;</td>
+                        <td>Campo para ingresar direcciones de correo electrónico. Valida el formato automáticamente.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="password"&gt;</td>
+                        <td>&lt;input type="password" id="password"&gt;</td>
+                        <td>Campo para ingresar contraseñas. El texto se muestra oculto.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td>&lt;textarea name="message"&gt;&lt;/textarea&gt;</td>
+                        <td>Área de texto de varias líneas para escribir mensajes o comentarios largos.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="color"&gt;</td>
+                        <td>&lt;input type="color" id="fcolor"&gt;</td>
+                        <td>Permite al usuario seleccionar un color mediante un selector de color.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="file"&gt;</td>
+                        <td>&lt;input type="file" id="file"&gt;</td>
+                        <td>Permite subir archivos desde el dispositivo del usuario.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="date"&gt;</td>
+                        <td>&lt;input type="date" id="date"&gt;</td>
+                        <td>Campo para seleccionar una fecha mediante un calendario.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="search"&gt;</td>
+                        <td>&lt;input type="search" id="sch"&gt;</td>
+                        <td>Campo de búsqueda optimizado para introducir términos de búsqueda.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="reset"&gt;</td>
+                        <td>&lt;input type="reset" value="borrar todo"&gt;</td>
+                        <td>Botón que reinicia todos los campos del formulario a sus valores originales.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="submit"&gt;</td>
+                        <td>&lt;input type="submit" value="Subir formulario"&gt;</td>
+                        <td>Botón que envía los datos del formulario al servidor.</td>
+                    </tr>
+                </table>
+            </center>
+            <br>
+        </div>
+        <br>
+        <div class="bloque">
+            <h1>Parte 5: Imágenes e Hiperenlaces</h1>
+            <h4>Para decorar nuestras páginas web usando imágenes, debemos usar la etiqueta &lt;img&gt;, y dentro de esta misma pondremos: src="Enlace de la imagen" height="altura en pixeles o porentajes" width="ancho en pixeles o porcentajes".<br>
+                <br> (Además de enlaces, con src pordemos añadir imagenes de nuestro dispositivo añadiendo la ruta del mismo o poniendo solo el nombre y la extensión del archivo si esta en la misma carpeta que el .html)
+            </h4>
+            <br> <br>
+            <center>
+                <img src="IMAGEN1.png" height="40">
+            </center>
+            <br> <br>
+            <h4>Para usar hiperenlaces usamos la etiqueta &lt;a&gt;, y dentro de la etiqueta ponemos: href="enlace", y por último, añadimos un texto o imagen que al clicar nos mande a el enlace.</h4>
+            <br>
+        </div>
+        <br>
+        <div class="bloque">
+            <h1>Parte 6: CSS y Javascript</h1>
+            <h4>Para añadir elementos visuales a nuestra página web debemos usar CSS y javascript, aunque no entraré en detalle en esta guía, si queremos añadir algo ocasional podemos usar las etiquetas &lt;style&gt; para añadir algo en CSS, y &lt;script&gt; para añadir algo en javascript.</h4>
+            <br>
+
+        </div>
+        <br>
+        <div class="bloque">
+            <h1>Parte 7: Canvas</h1>
+            <h4>Para crear un canvas en nuestra web, en el que podremos "dibujar dentro" usaremos la etiqueta &lt;canvas&gt;, y dentro añadiremos id="id del canvas" width="ancho en pixeles" height="altura en pixeles". Esto creará en nuestra web el espacio disponible para pintar algo con javascript.</h4>
+            <h4>Para ello, usaremos la etiqueta &lt;script&gt; en la que añadiremos el código de javascript para crear cuadrados o rectangulos de colores o poner bordes (Como ya mencioném, en esta página no entraré en explicaciones de CSS o JS).</h4>
+            <h4>Un ejemplo:</h4>
+            <center>
+            <img src="IMAGEN3.png" height="500">
+            <br> <br>
+            <canvas id="myCanvas" width="325px" height="405px"> </canvas>
+            <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctxt = canvas.getContext("2d");
+            ctxt.fillStyle="red";
+            ctxt.fillRect(0,0,300,75);
+
+            
+
+            ctxt.fillStyle="yellow";
+            ctxt.fillRect(0,75,300,100);
+
+            ctxt.fillStyle="red";
+            ctxt.fillRect(0,175,300,75);
+
+            ctxt.fillStyle="brown";
+            ctxt.fillRect(280,0,20,400);
+                    
+            
+            ctxt.strokeStyle="black";
+            ctxt.lineWidth=5;
+            ctxt.strokeRect(1, 1, 280, 250);
+
+            ctxt.strokeStyle="black";
+            ctxt.lineWidth=5;
+            ctxt.strokeRect(1, 75, 280, 100);
+
+            ctxt.strokeStyle="black";
+            ctxt.lineWidth=5;
+            ctxt.strokeRect(280, 1, 20, 400);
+
+            </script>
+            </center>
+            <br>
+            <br>
+        </div>
+        <br>
+        <div class="bloque">
+            <h1>Parte 8: Videos y audios</h1>
+            <h4>Por último, voy a explicar cómo poner videos y audios en nuestras webs, esto puede hacerse con la etiqueta &lt;video&gt; y la etiqeta &lt;audio&gt;, añadiendo dentro de las mismas: width="ancho en pixeles" controls&gt;.</h4>
+            <h4>dentro de esta etiqueta añadiremos la etiqueta &lt;source src="nombre del video o audio descargado con su extensión" type="video/mp4 o audio/mp3"&gt; </h4>
+            <h4>Un ejemplo de esto:</h4>
+            <center>
+            <img src="IMAGEN2.png" height="60">
+            <br>
+            <br>
+            <video width="520" controls>
+                <source src="cosechapropia.mp4" type="video/mp4">
+            </video>
+        </center>
+            <br> <br>
+        </div>
+        <br>
+    </body>
+</HTML>
